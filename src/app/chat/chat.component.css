@@ -1,0 +1,31 @@
+.chat-container{
+  height: 100%;
+}
+.header{
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen{
+  display: flex;
+  flex-direction: column;
+  /* align-content: flex-end; */
+  justify-content: end;
+  height: 80%;
+  overflow-y: scroll;
+}
+/* .screenview{
+
+} */
+.input-chat{
+  height: 10%;
+
+  display: flex;
+}
+.input-chat input{
+  width: 70%;
+}
+.input-chat button{
+  width: 30%;
+}

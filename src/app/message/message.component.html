@@ -1,0 +1,6 @@
+
+<div [ngClass]="{'self':sides, 'other': !sides}">
+  <div *ngIf= "!sides" class="user-name">{{user}}</div>
+  <div class="message">{{ message.body.content }}</div>
+  <div class="time">{{ message.time | convertTimeToString }}</div>
+</div>

@@ -1,0 +1,33 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+h1{
+  align-items: center;
+}
+.container{
+  height: 100%;
+  width: 100%;
+}
+.userRegistered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+
+}
+main{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow-y: scroll;
+  /* background-color: blueviolet; */
+  height: 500px;
+}
+.heading{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}

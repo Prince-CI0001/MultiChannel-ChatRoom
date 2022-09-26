@@ -1,0 +1,22 @@
+<div class="container">
+<div class="header">
+  <h3>{{user.name}}</h3>
+  <button (click)="quitUser()">X</button>
+</div>
+<div class="channel-container">
+  <div class="channelList">
+    <div class="channel-name">
+      <div *ngFor="let item of channelsArray">
+        <p (click)="optedChannel(item)">{{item.name}}</p>
+      </div>
+    </div>
+    <div class="addchannel">
+      <input id="channelName" type="text" placeholder="channels" [(ngModel)]= "channelName">
+      <button  (click)="addChannel()">Add</button>
+    </div>
+  </div>
+  <div class="chat">
+    <app-chat [user]="user" [channel] = "curr_channel"></app-chat>
+  </div>
+</div>
+</div>

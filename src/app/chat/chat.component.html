@@ -1,0 +1,24 @@
+<!-- <p>chat works!</p> -->
+
+<div  *ngIf="isMember; else elseBlock"  class="chat-container">
+  <div class="header">
+     <h3>{{channel.name}}</h3>
+  </div>
+  <div class="screen">
+    <div class="screenview" *ngFor="let items of messageArray">
+      <app-message [channelOwner]="user.name" [message]="items"></app-message>
+    </div>
+
+  </div>
+  <div class="input-chat">
+    <input type="text" placeholder="Enter your Message" [(ngModel)]="newmessage">
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>
+
+<ng-template #elseBlock>
+  <div class="join-chat">
+    <h2>Want to Join</h2>
+    <button (click)="joinChannel()">JOIN CHANNEL</button>
+  </div>
+</ng-template>

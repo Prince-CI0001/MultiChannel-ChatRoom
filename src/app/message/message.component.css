@@ -1,0 +1,24 @@
+.user-name{
+  font-size: 0.8em;
+}
+.message{
+  padding: 2% 3% 2% 3%;
+  font-size: 1.8em;
+  border-radius: 8%;
+  background-color: #ffb75f;
+  color: white;
+  width: fit-content;
+}
+.time{
+  font-size: 0.6em;
+}
+.self{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.other{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
