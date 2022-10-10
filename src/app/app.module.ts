@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ChannelComponent } from './channel/channel.component';
 import { ChatComponent } from './chat/chat.component';
 import { MessageComponent } from './message/message.component';
-import { GetUserNamePipe } from './get-user-name.pipe';
+//import { GetUserNamePipe } from './get-user-name.pipe';
 import { ConvertTimeToStringPipe } from './convert-time-to-string.pipe';
 
 
@@ -16,7 +16,7 @@ import { ConvertTimeToStringPipe } from './convert-time-to-string.pipe';
     ChannelComponent,
     ChatComponent,
     MessageComponent,
-    GetUserNamePipe,
+    //GetUserNamePipe,
     ConvertTimeToStringPipe,
   ],
   imports: [
